@@ -1,0 +1,13 @@
+// pages
+
+@import "../base-partial/pages/header.scss";
+@import "../base-partial/pages/landing.scss";
+
+%scroll-y {
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
