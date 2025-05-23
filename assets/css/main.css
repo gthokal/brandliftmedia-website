@@ -172,6 +172,12 @@ h6 {
   margin-right: 8px;
 }
 
+@media screen and (max-width: 992px) {
+  .header .logo img {
+    max-height: 30px;
+  }
+}
+
 .header .logo h1 {
   font-size: 24px;
   margin: 0;
@@ -823,6 +829,13 @@ section,
 .hero .hero-image img {
   max-width: 100%;
   height: auto;
+}
+
+@media screen and (max-width: 992px) {
+  .hero .hero-image img {
+    position: relative;
+    top: 15px;
+  }
 }
 
 .hero .customers-badge {

@@ -1,12 +1,22 @@
 .header {
   padding: 36px 0 20px;
 }
+@media screen and (max-width: 992px) {
+  .header {
+    padding: 20px 0;
+  }
+}
 .header .header-container {
   border-radius: 10px;
   padding: 12px 25px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   box-shadow: 1px 3px 14.1px 0px rgba(0, 0, 0, 0.1019607843);
   max-width: 1049px;
+}
+@media screen and (max-width: 992px) {
+  .header .header-container {
+    padding: 12px 8px;
+  }
 }
 
 .navmenu a, .navmenu a:focus {
@@ -22,30 +32,41 @@
   background-size: cover;
   padding-bottom: 0;
 }
+@media screen and (max-width: 992px) {
+  .hero {
+    padding-top: 110px;
+  }
+}
 .hero .hero-content h1 {
   font-weight: 700;
   font-size: 54px;
   line-height: 100%;
   letter-spacing: 0%;
-  color: #00152A;
+  color: #003439;
+}
+@media screen and (max-width: 992px) {
+  .hero .hero-content h1 {
+    font-size: 32px;
+    line-height: 38px;
+  }
 }
 .hero .btn-primary {
   background-color: #EEAC19;
   border-color: #EEAC19;
-  color: #00152A;
+  color: #003439;
   border: none;
   cursor: pointer;
 }
 .hero .btn-primary:hover {
-  background-color: #00152A;
-  border-color: #00152A;
+  background-color: #003439;
+  border-color: #003439;
   color: #EEAC19;
   border: none;
   cursor: pointer;
 }
 .hero .btn:hover {
-  background-color: #00152A;
-  border-color: #00152A;
+  background-color: #003439;
+  border-color: #003439;
   color: #EEAC19;
   border: none;
   cursor: pointer;
@@ -54,22 +75,22 @@
 .btn-primary {
   background-color: #EEAC19;
   border-color: #EEAC19;
-  color: #00152A;
+  color: #003439;
   border: none;
   cursor: pointer;
 }
 
 .btn-primary:hover {
-  background-color: #00152A;
-  border-color: #00152A;
+  background-color: #003439;
+  border-color: #003439;
   color: #EEAC19;
   border: none;
   cursor: pointer;
 }
 
 .btn:hover {
-  background-color: #00152A;
-  border-color: #00152A;
+  background-color: #003439;
+  border-color: #003439;
   color: #EEAC19;
   border: none;
   cursor: pointer;
@@ -99,7 +120,7 @@
   margin-right: 8px;
 }
 .footer .copyright {
-  border-top: 4px solid #0d83fd;
+  border-top: 4px solid #003439;
 }
 .footer .footer-about {
   display: flex;
@@ -119,7 +140,7 @@
 }
 
 .brandlift-feature {
-  background: #00152A;
+  background-color: #001F22;
 }
 .brandlift-feature .container {
   max-width: 1049px;
@@ -128,11 +149,19 @@
   display: flex;
   justify-content: center;
 }
+@media screen and (max-width: 992px) {
+  .brandlift-feature .flex-box {
+    margin-bottom: 20px;
+  }
+  .brandlift-feature .flex-box:last-child {
+    margin-bottom: 0;
+  }
+}
 .brandlift-feature .feature-box {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #102132;
+  background-color: #003439;
   border-radius: 20px;
   width: 100%;
   height: 100%;
@@ -151,11 +180,22 @@
   margin: auto;
   margin-bottom: 10px;
 }
+@media screen and (max-width: 992px) {
+  .brandlift-feature .feature-box .feature-block .feature-img {
+    width: 60px;
+    height: 60px;
+  }
+}
 .brandlift-feature .feature-box .feature-block h4 {
   font-size: 32px;
   font-weight: 700;
   color: #fff;
   margin-bottom: 12px;
+}
+@media screen and (max-width: 992px) {
+  .brandlift-feature .feature-box .feature-block h4 {
+    font-size: 26px;
+  }
 }
 .brandlift-feature .feature-box .feature-block p {
   font-weight: 400;
@@ -166,6 +206,13 @@
   color: #fff;
   margin-bottom: 0;
   min-height: 120px;
+}
+@media screen and (max-width: 992px) {
+  .brandlift-feature .feature-box .feature-block p {
+    font-size: 14px;
+    line-height: 20px;
+    min-height: auto;
+  }
 }
 
 .about {
@@ -192,11 +239,23 @@
   letter-spacing: 0%;
   text-align: center;
   margin-bottom: 100px;
-  color: #00152A;
+  color: #003439;
+}
+@media screen and (max-width: 992px) {
+  .about .about-title {
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 5px;
+  }
 }
 .about .about-content {
   margin-left: 60px;
   margin-right: 200px;
+}
+@media screen and (max-width: 992px) {
+  .about .about-content {
+    margin: 0;
+  }
 }
 .about .about-content h3 {
   font-weight: 700;
@@ -204,15 +263,28 @@
   line-height: 100%;
   letter-spacing: 0%;
   margin-bottom: 40px;
-  color: #00152A;
+  color: #003439;
+}
+@media screen and (max-width: 992px) {
+  .about .about-content h3 {
+    margin-bottom: 20px;
+    font-size: 36px;
+  }
 }
 .about .about-content .p-content {
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
   letter-spacing: 0%;
-  color: #00152A;
+  color: #003439;
   margin-bottom: 50px;
+}
+@media screen and (max-width: 992px) {
+  .about .about-content .p-content {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 30px;
+  }
 }
 .about .about-content .button-wrapper .button {
   background: #EEAC19;
@@ -222,7 +294,7 @@
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0%;
-  color: #00152A;
+  color: #003439;
   border: none;
   cursor: pointer;
 }
@@ -287,17 +359,10 @@
 .client-section .client-card {
   background-color: #ffffff;
   border-radius: 10px;
-  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
-}
-.client-section .client-card.ht-100 {
-  height: 100px;
-}
-.client-section .client-card.ht-75 {
-  height: 75px;
 }
 
 .btn {
@@ -308,7 +373,7 @@
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0%;
-  color: #00152A;
+  color: #003439;
   border: none;
   cursor: pointer;
 }
@@ -324,7 +389,7 @@
   letter-spacing: 0%;
   text-align: center;
   margin-bottom: 50px;
-  color: #00152A;
+  color: #003439;
 }
 
 .testimonial-card {
@@ -341,13 +406,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 225px;
-  margin: auto;
-  margin-bottom: 25px;
-  border: 1.5px solid #EEAC19;
-  border-radius: 10px;
-  background-color: #ffffff;
-  box-shadow: 0px 4px 13.1px 2px rgba(0, 0, 0, 0.1490196078);
+  margin-bottom: 20px;
 }
 .testimonial-card .testimonial-block h3 {
   font-weight: 800;
@@ -355,14 +414,14 @@
   line-height: 24px;
   letter-spacing: 0%;
   margin-bottom: 12px;
-  color: #00152A;
+  color: #003439;
 }
 .testimonial-card .testimonial-block .p-content {
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0%;
-  color: #00152A;
+  color: #003439;
   margin-bottom: 20px;
 }
 .testimonial-card .testimonial-block .button-wrapper {
@@ -391,7 +450,7 @@
 
 .hero .customers-badge .avatar.more {
   background-color: #EEAC19;
-  color: #00152A;
+  color: #003439;
 }
 
 .scroll-top {
@@ -408,7 +467,7 @@
   letter-spacing: 0%;
   text-align: center;
   margin-bottom: 50px;
-  color: #00152A;
+  color: #003439;
   padding-bottom: 0;
 }
 .contact .info-box {
@@ -416,23 +475,23 @@
   background-color: #EEAC19;
 }
 .contact .info-box h3, .contact .info-box p {
-  color: #00152A;
+  color: #003439;
 }
 .contact .info-box .content h4 {
-  color: #00152A;
+  color: #003439;
 }
 .contact .info-box .info-item .icon-box i {
-  color: #00152A;
+  color: #003439;
 }
 .contact .contact-form {
   padding: 30px;
 }
 .contact .contact-form .btn {
   background-color: #EEAC19;
-  color: #00152A;
+  color: #003439;
 }
 .contact .contact-form .btn:hover {
-  background-color: #00152A;
+  background-color: #003439;
   color: #EEAC19;
 }
 .contact .contact-form .form-control, .contact .contact-form .form-select {

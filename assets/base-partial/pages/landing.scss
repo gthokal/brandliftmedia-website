@@ -1,17 +1,23 @@
 .brandlift-feature{
-    background: #00152A;
+    background-color: #001F22;
     .container{
         max-width: 1049px;
     }
     .flex-box{
         display: flex;
         justify-content: center;
+        @media screen and (max-width: 992px) {
+            margin-bottom: 20px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
     }
     .feature-box{
         display: flex;
         justify-content: center;
         align-items: center;
-        background: #102132;
+        background-color: #003439;
         border-radius: 20px;
         width: 100%;
         height: 100%;
@@ -27,12 +33,19 @@
                 height: 100px;
                 margin: auto;
                 margin-bottom: 10px;
+                @media screen and (max-width: 992px) {
+                    width: 60px;
+                    height: 60px;
+                }
             }
             h4{
                 font-size: 32px;
                 font-weight: 700;
                 color: #fff;
                 margin-bottom: 12px;
+                @media screen and (max-width: 992px) {
+                    font-size: 26px;
+                }
             }
             p{
                 font-weight: 400;
@@ -43,6 +56,11 @@
                 color: #fff;
                 margin-bottom: 0;
                 min-height: 120px;
+                @media screen and (max-width: 992px) {
+                    font-size: 14px;
+                    line-height: 20px;
+                    min-height: auto;
+                }
             }
         }
     }
@@ -71,26 +89,43 @@
         letter-spacing: 0%;
         text-align: center;
         margin-bottom: 100px;
-        color: #00152A;
+        color: #003439;
+        @media screen and (max-width: 992px) {
+            font-size: 32px;
+            line-height: 38px;
+            margin-bottom: 5px;
+        }
     }
     .about-content{
         margin-left: 60px;
         margin-right: 200px;
+        @media screen and (max-width: 992px) {
+            margin: 0;
+        }
         h3{
             font-weight: 700;
             font-size: 40px;
             line-height: 100%;
             letter-spacing: 0%;
             margin-bottom: 40px;
-            color: #00152A;
+            color: #003439;
+            @media screen and (max-width: 992px) {
+                margin-bottom: 20px;
+                font-size: 36px;
+            }
         }
         .p-content{
             font-weight: 500;
             font-size: 16px;
             line-height: 26px;
             letter-spacing: 0%;
-            color: #00152A;
+            color: #003439;
             margin-bottom: 50px;
+            @media screen and (max-width: 992px) {
+                font-size: 14px;
+                line-height: 22px;
+                margin-bottom: 30px;
+            }
         }
         .button-wrapper{
             .button{
@@ -101,7 +136,7 @@
                 font-size: 16px;
                 line-height: 24px;
                 letter-spacing: 0%;
-                color: #00152A;
+                color: #003439;
                 border: none;
                 cursor: pointer;
             }
@@ -170,17 +205,10 @@
     .client-card{
         background-color: #ffffff;
         border-radius: 10px;
-        padding: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
         margin-bottom: 20px;
-        &.ht-100{
-            height: 100px;
-        }
-        &.ht-75{
-            height: 75px;
-        }
     }
 }
 
@@ -192,7 +220,7 @@
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0%;
-    color: #00152A;
+    color: #003439;
     border: none;
     cursor: pointer;
     &:hover{
@@ -208,7 +236,7 @@
     letter-spacing: 0%;
     text-align: center;
     margin-bottom: 50px;
-    color: #00152A;
+    color: #003439;
 }
 
 .testimonial-card{
@@ -226,13 +254,13 @@
             justify-content: center;
             align-items: center;
             width: 100%;
-            height: 225px;
-            margin: auto;
-            margin-bottom: 25px; 
-            border: 1.5px solid #EEAC19;
-            border-radius: 10px;
-            background-color: #ffffff;
-            box-shadow: 0px 4px 13.1px 2px #00000026;
+            // height: 225px;
+            // margin: auto;
+            margin-bottom: 20px; 
+            // border: 1.5px solid #EEAC19;
+            // border-radius: 10px;
+            // background-color: #ffffff;
+            // box-shadow: 0px 4px 13.1px 2px #00000026;
         }
         h3{
             font-weight: 800;
@@ -240,14 +268,14 @@
             line-height: 24px;
             letter-spacing: 0%;
             margin-bottom: 12px;
-            color: #00152A;
+            color: #003439;
         }
         .p-content{
             font-weight: 500;
             font-size: 14px;
             line-height: 18px;
             letter-spacing: 0%;
-            color: #00152A;
+            color: #003439;
             margin-bottom: 20px;
         }
         .button-wrapper{
@@ -276,7 +304,7 @@
 
 .hero .customers-badge .avatar.more{
    background-color: #EEAC19;
-    color: #00152A;
+    color: #003439;
 }
 
 .scroll-top{
@@ -294,31 +322,31 @@
         letter-spacing: 0%;
         text-align: center;
         margin-bottom: 50px;
-        color: #00152A;
+        color: #003439;
         padding-bottom: 0;
     }
     .info-box{
         padding: 30px;
        background-color: #EEAC19;
         h3, p{
-            color: #00152A;
+            color: #003439;
         }
         .content{
             h4{
-                color: #00152A;
+                color: #003439;
             }
         }
         .info-item .icon-box i {
-            color: #00152A;
+            color: #003439;
         }
     }
     .contact-form{
         padding: 30px;
         .btn{
            background-color: #EEAC19;
-            color: #00152A;
+            color: #003439;
             &:hover{
-                background-color: #00152A;
+                background-color: #003439;
                 color: #EEAC19;
             }
         }
