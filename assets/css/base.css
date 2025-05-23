@@ -1,5 +1,5 @@
 .header {
-  padding: 40px 0 20px;
+  padding: 36px 0 20px;
 }
 .header .header-container {
   border-radius: 10px;
@@ -14,11 +14,11 @@
 }
 
 .navmenu li:hover > a, .navmenu .active, .navmenu .active:focus {
-  color: #FDC200;
+  color: #EEAC19;
 }
 
 .hero {
-  background: url("../img/brandlift-bg.png") no-repeat center center;
+  background: url("../img/hero-bg.png") no-repeat center center;
   background-size: cover;
   padding-bottom: 0;
 }
@@ -30,8 +30,8 @@
   color: #00152A;
 }
 .hero .btn-primary {
-  background-color: #FDC200;
-  border-color: #FDC200;
+  background-color: #EEAC19;
+  border-color: #EEAC19;
   color: #00152A;
   border: none;
   cursor: pointer;
@@ -39,21 +39,21 @@
 .hero .btn-primary:hover {
   background-color: #00152A;
   border-color: #00152A;
-  color: #FDC200;
+  color: #EEAC19;
   border: none;
   cursor: pointer;
 }
 .hero .btn:hover {
   background-color: #00152A;
   border-color: #00152A;
-  color: #FDC200;
+  color: #EEAC19;
   border: none;
   cursor: pointer;
 }
 
 .btn-primary {
-  background-color: #FDC200;
-  border-color: #FDC200;
+  background-color: #EEAC19;
+  border-color: #EEAC19;
   color: #00152A;
   border: none;
   cursor: pointer;
@@ -62,7 +62,7 @@
 .btn-primary:hover {
   background-color: #00152A;
   border-color: #00152A;
-  color: #FDC200;
+  color: #EEAC19;
   border: none;
   cursor: pointer;
 }
@@ -70,23 +70,33 @@
 .btn:hover {
   background-color: #00152A;
   border-color: #00152A;
-  color: #FDC200;
+  color: #EEAC19;
   border: none;
   cursor: pointer;
 }
 
 .footer {
-  background-color: #00152A;
+  background-color: #001F22;
   color: #ffffff;
 }
 .footer h4 {
-  color: #FDC200;
+  color: #EEAC19;
 }
 .footer .footer-links ul a {
+  display: inline-flex;
+  align-items: center;
   color: #ffffff;
+  line-height: 18px;
 }
 .footer .footer-links ul a:hover {
-  color: #FDC200;
+  color: #EEAC19;
+}
+.footer .footer-links ul a .connect-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  margin-right: 8px;
 }
 .footer .copyright {
   border-top: 4px solid #0d83fd;
@@ -97,7 +107,6 @@
   justify-content: center;
 }
 .footer .footer-about .logo img {
-  width: 300px;
   max-height: none;
 }
 .footer .social-links a {
@@ -105,8 +114,8 @@
   border-color: #ffffff;
 }
 .footer .social-links a:hover {
-  color: #FDC200;
-  border-color: #FDC200;
+  color: #EEAC19;
+  border-color: #EEAC19;
 }
 
 .brandlift-feature {
@@ -126,7 +135,7 @@
   background: #102132;
   border-radius: 20px;
   width: 100%;
-  height: 316px;
+  height: 100%;
   padding: 20px;
   margin: 0 10px;
 }
@@ -142,6 +151,12 @@
   margin: auto;
   margin-bottom: 10px;
 }
+.brandlift-feature .feature-box .feature-block h4 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 12px;
+}
 .brandlift-feature .feature-box .feature-block p {
   font-weight: 400;
   font-size: 16px;
@@ -150,6 +165,7 @@
   text-align: center;
   color: #fff;
   margin-bottom: 0;
+  min-height: 120px;
 }
 
 .about {
@@ -165,7 +181,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("../img/about-bg.png") no-repeat center center;
+  background: url("../img/aboutus-sec-bg.png") no-repeat center center;
   background-size: cover;
   z-index: -1;
 }
@@ -199,7 +215,7 @@
   margin-bottom: 50px;
 }
 .about .about-content .button-wrapper .button {
-  background: #FDC200;
+  background: #EEAC19;
   border-radius: 10px;
   padding: 10px 20px;
   font-weight: 700;
@@ -215,6 +231,9 @@
   background: #00152A;
 }
 
+.services {
+  background: #001F22;
+}
 .services .section-title {
   padding-bottom: 30px;
 }
@@ -232,7 +251,7 @@
 }
 
 .service-item {
-  background: #102132;
+  background: #003439;
   border-radius: 18px;
   padding: 20px;
   display: flex;
@@ -282,7 +301,7 @@
 }
 
 .btn {
-  background: #FDC200;
+  background: #EEAC19;
   border-radius: 10px;
   padding: 10px 20px;
   font-weight: 700;
@@ -295,7 +314,7 @@
 }
 .btn:hover {
   background: #00152A;
-  color: #FDC200;
+  color: #EEAC19;
 }
 
 .case-title {
@@ -325,7 +344,7 @@
   height: 225px;
   margin: auto;
   margin-bottom: 25px;
-  border: 1.5px solid #FDC200;
+  border: 1.5px solid #EEAC19;
   border-radius: 10px;
   background-color: #ffffff;
   box-shadow: 0px 4px 13.1px 2px rgba(0, 0, 0, 0.1490196078);
@@ -371,12 +390,15 @@
 }
 
 .hero .customers-badge .avatar.more {
-  background-color: #FDC200;
+  background-color: #EEAC19;
   color: #00152A;
 }
 
 .scroll-top {
-  background-color: #FDC200;
+  background-color: #EEAC19;
+}
+.scroll-top:hover {
+  background-color: #003439;
 }
 
 .contact .sec-title {
@@ -391,7 +413,7 @@
 }
 .contact .info-box {
   padding: 30px;
-  background-color: #FDC200;
+  background-color: #EEAC19;
 }
 .contact .info-box h3, .contact .info-box p {
   color: #00152A;
@@ -406,18 +428,18 @@
   padding: 30px;
 }
 .contact .contact-form .btn {
-  background-color: #FDC200;
+  background-color: #EEAC19;
   color: #00152A;
 }
 .contact .contact-form .btn:hover {
   background-color: #00152A;
-  color: #FDC200;
+  color: #EEAC19;
 }
 .contact .contact-form .form-control, .contact .contact-form .form-select {
   padding: 10px 20px;
 }
 .contact .contact-form .form-control:focus, .contact .contact-form .form-select:focus {
-  border-color: #FDC200;
+  border-color: #EEAC19;
 }
 
 body::-webkit-scrollbar {

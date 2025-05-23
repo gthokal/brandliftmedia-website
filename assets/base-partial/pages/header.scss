@@ -1,5 +1,5 @@
 .header{
-    padding: 40px 0 20px;
+    padding: 36px 0 20px;
     .header-container {
         border-radius: 10px;    
         padding: 12px 25px;
@@ -13,11 +13,11 @@
     margin: 0 5px;
 }
 .navmenu li:hover>a, .navmenu .active, .navmenu .active:focus{
-    color: #FDC200;
+    color: #EEAC19;
 }
 
 .hero{
-    background: url('../img/brandlift-bg.png') no-repeat center center;
+    background: url('../img/hero-bg.png') no-repeat center center;
     background-size: cover;
     padding-bottom: 0;
     .hero-content {
@@ -30,8 +30,8 @@
         }
     }
     .btn-primary{
-        background-color: #FDC200;
-        border-color: #FDC200;
+       background-color: #EEAC19;
+        border-color: #EEAC19;
         color: #00152A;
         border: none;
         cursor: pointer;
@@ -39,22 +39,22 @@
     .btn-primary:hover{
         background-color: #00152A;
         border-color: #00152A;
-        color: #FDC200;
+        color: #EEAC19;
         border: none;
         cursor: pointer;
     }
     .btn:hover{
         background-color: #00152A;
         border-color: #00152A;
-        color: #FDC200;
+        color: #EEAC19;
         border: none;
         cursor: pointer;
     }
 }
 
 .btn-primary{
-    background-color: #FDC200;
-    border-color: #FDC200;
+   background-color: #EEAC19;
+    border-color: #EEAC19;
     color: #00152A;
     border: none;
     cursor: pointer;
@@ -62,14 +62,14 @@
 .btn-primary:hover{
     background-color: #00152A;
     border-color: #00152A;
-    color: #FDC200;
+    color: #EEAC19;
     border: none;
     cursor: pointer;
 }
 .btn:hover{
     background-color: #00152A;
     border-color: #00152A;
-    color: #FDC200;
+    color: #EEAC19;
     border: none;
     cursor: pointer;
 }
@@ -77,15 +77,25 @@
 // footer css
 
 .footer{
-    background-color: #00152A;
+    background-color: #001F22;
     color: #ffffff;
     h4 {
-        color: #FDC200;
+        color: #EEAC19;
     }
     .footer-links ul a{
+        display: inline-flex;
+        align-items: center;
         color: #ffffff;
+        line-height: 18px;
         &:hover{
-            color: #FDC200;
+            color: #EEAC19;
+        }
+        .connect-icon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30px;
+            margin-right: 8px;
         }
     }
     .copyright{
@@ -96,7 +106,6 @@
         align-items: center;
         justify-content: center;
         .logo img{
-            width: 300px;
             max-height: none;
         }
     }
@@ -104,8 +113,8 @@
         color: #ffffff;
         border-color: #ffffff;
         &:hover{
-            color: #FDC200;
-            border-color: #FDC200;
+            color: #EEAC19;
+            border-color: #EEAC19;
         }
     }
 } 
