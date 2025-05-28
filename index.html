@@ -66,6 +66,17 @@
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="assets/css/base.css" rel="stylesheet">
 
+  <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function(){
+        emailjs.init({
+          publicKey: "Fe4bL8cJgT4toUftn",
+        });
+    })();
+  </script>
+  <script src="./script.js"></script>
 </head>
 
 <body class="index-page">
@@ -404,7 +415,7 @@
     <!-- /Testimonial Section -->
 
     <!-- Contact Section -->
-    <section id="contact" class="contact section light-background" style="display: non;">
+    <section id="contact" class="contact section light-background" style="display: none;">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <h2 class="sec-title">Contact</h2>
@@ -454,7 +465,7 @@
               <h3>Get In Touch</h3>
               <!-- <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis.</p> -->
 
-              <form action="#" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <form data-aos="fade-up" data-aos-delay="200">
                 <div class="row gy-3">
 
                   <div class="col-md-6">
@@ -465,11 +476,11 @@
                     <input type="email" id="email" class="form-control" name="email" placeholder="Enter Your Email" autocomplete="off">
                   </div>
 
-                  <div class="col-md-6">
-                    <input type="number" id="phone" class="form-control" name="number" placeholder="Enter Your Mobile" autocomplete="off">
-                  </div>
+                  <!-- <div class="col-md-6">
+                    <input type="number" id="mobile" class="form-control" name="number" placeholder="Enter Your Mobile" autocomplete="off">
+                  </div> -->
 
-                  <div class="col-md-6">
+                  <div class="col-md-12">
                     <input type="text" id="subject" class="form-control" name="subject" placeholder="Enter Subject" autocomplete="off">
                   </div>
 
@@ -478,11 +489,11 @@
                   </div>
 
                   <div class="col-12 text-center">
-                    <div class="loading">Loading</div>
+                    <!-- <div class="loading">Loading</div>
                     <div class="error-message"></div>
-                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div> -->
 
-                    <button type="submit" class="btn">Send Message</button>
+                    <button type="submit" onclick="sendEmail()" class="btn">Send Message</button>
                   </div>
 
                 </div>
@@ -514,8 +525,8 @@
           <ul>
             <li><a href="#about">About us</a></li>
             <li><a href="#services">Services</a></li>
-            <!-- <li><a href="#">Privacy policy</a></li>
-            <li><a href="#">Terms & Conditions</a></li>  -->
+            <li><a href="privacy-policy.html" target="_blank">Privacy policy</a></li>
+            <li><a href="terms-and-conditions.html" target="_blank">Terms & Conditions</a></li> 
           </ul>
         </div>
 
@@ -575,11 +586,11 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script src="./script.js"></script>
+  
 </body>
 
 </html>

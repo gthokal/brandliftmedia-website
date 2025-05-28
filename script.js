@@ -1,21 +1,15 @@
-const form =document.querySelector('form');
+
 
 function sendEmail(){
-    Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "brandlift.media17@gmail.com",
-        Password : "08C36DA5D7BEB6633BAD78F6AB81F41DFE20",
-        To : 'brandlift.media17@gmail.com',
-        From : "brandlift.media17@gmail.com",
-        Subject : "This is the subject",
-        Body : "And this is the body"
-    }).then(
-        message => alert(message)
-    );
+    console.log("email param");
+    let params = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        subject: document.getElementById("subject").value,
+        message: document.getElementById("message").value,
+    }
+
+    console.log(params)
+
+    emailjs.send("service_ynvdb8a","template_na9r2b9", params).then(alert("Email Sent!!"))
 }
-
-form.addEventListener("submit", (e) => {
-    e.preventDefault();
-
-    sendEmail();
-})
