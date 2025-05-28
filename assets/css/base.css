@@ -387,7 +387,7 @@
   color: #EEAC19;
 }
 
-.contact-btn {
+.contact-form input[type=submit] {
   background: #EEAC19;
   border-radius: 10px;
   padding: 10px 20px;
@@ -399,7 +399,7 @@
   border: none;
   cursor: pointer;
 }
-.contact-btn:hover {
+.contact-form input[type=submit]:hover {
   background: #00152A;
   color: #EEAC19;
 }
@@ -653,6 +653,11 @@
 }
 
 .overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.overlay.show {
   visibility: visible;
   opacity: 1;
 }
