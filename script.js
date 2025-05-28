@@ -14,25 +14,25 @@
 //     emailjs.send("service_ynvdb8a","template_na9r2b9", params).then(alert("Email Sent!!"))
 // }
 
-const btn = document.getElementById("button")
+// const btn = document.getElementById("button")
 
-document.getElementById("form").addEventListener("submit", function (event) {
-  event.preventDefault()
+// document.getElementById("form").addEventListener("submit", function (event) {
+//   event.preventDefault()
 
-  btn.value = "Sending..."
+//   btn.value = "Sending..."
 
-  const serviceID = "service_ynvdb8a"
-  const templateID = "template_na9r2b9"
+//   const serviceID = "service_ynvdb8a"
+//   const templateID = "template_na9r2b9"
 
-  emailjs.sendForm(serviceID, templateID, this).then(
-    () => {
-      btn.value = "Send Email"
-      //alert("Sent!");
-      window.location.hash = "#popup2";
-    },
-    (err) => {
-      btn.value = "Send Email"
-      alert(JSON.stringify(err))
-    },
-  )
-})
+//   emailjs.sendForm(serviceID, templateID, this).then(
+//     () => {
+//       btn.value = "Send Email"
+//       //alert("Sent!");
+//       window.location.hash = "#popup2";
+//     },
+//     (err) => {
+//       btn.value = "Send Email"
+//       alert(JSON.stringify(err))
+//     },
+//   )
+// })

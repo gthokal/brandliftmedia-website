@@ -507,7 +507,7 @@
                   </div>
                   
                   <div class="col-md-12 text-center" >
-                    <input type="submit" id="button" value="Send Email" class="btn">
+                    <input type="submit" id="button" value="Send Email" class="contact-btn">
                   </div>
 
                 </div>
@@ -613,6 +613,30 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script type="text/javascript">
     emailjs.init('Fe4bL8cJgT4toUftn')
+  </script>
+  <script type="text/javascript">
+    const btn = document.getElementById("button")
+
+    document.getElementById("form").addEventListener("submit", function (event) {
+      event.preventDefault()
+
+      btn.value = "Sending..."
+
+      const serviceID = "service_ynvdb8a"
+      const templateID = "template_na9r2b9"
+
+      emailjs.sendForm(serviceID, templateID, this).then(
+        () => {
+          btn.value = "Send Email"
+          //alert("Sent!");
+          window.location.hash = "#popup2";
+        },
+        (err) => {
+          btn.value = "Send Email"
+          alert(JSON.stringify(err))
+        },
+      )
+    })
   </script>
 
   <!-- Main JS File -->
