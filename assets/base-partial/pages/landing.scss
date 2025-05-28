@@ -232,6 +232,23 @@
     }
 }
 
+.contact-btn{
+    background: #EEAC19;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #003439;
+    border: none;
+    cursor: pointer;
+    &:hover{
+        background: #00152A;
+        color: #EEAC19;
+    }
+}
+
 .case-title{
     font-weight: 700;
     font-size: 40px;
