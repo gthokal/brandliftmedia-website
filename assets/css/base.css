@@ -547,30 +547,28 @@
   color: #003439;
 }
 
-.section-page {
+section.section-page, .section.section-page {
   padding-top: 120px;
 }
 @media screen and (max-width: 992px) {
-  .section-page {
+  section.section-page, .section.section-page {
     padding-top: 90px;
   }
 }
-.section-page p {
+section.section-page p, .section.section-page p {
   font-size: 14px;
   line-height: 22px;
   margin-bottom: 10px;
 }
-
-.section-head {
+section.section-page .section-head, .section.section-page .section-head {
   padding: 50px 0;
 }
 @media screen and (max-width: 992px) {
-  .section-head {
+  section.section-page .section-head, .section.section-page .section-head {
     padding: 20px 0;
   }
 }
-
-.page-header h1 {
+section.section-page .page-header h1, .section.section-page .page-header h1 {
   font-weight: 700;
   font-size: 54px;
   line-height: 100%;
@@ -579,7 +577,7 @@
   text-align: center;
 }
 @media screen and (max-width: 992px) {
-  .page-header h1 {
+  section.section-page .page-header h1, .section.section-page .page-header h1 {
     font-size: 32px;
   }
 }
