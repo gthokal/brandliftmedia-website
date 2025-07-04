@@ -173,8 +173,11 @@ h6 {
 }
 
 @media screen and (max-width: 992px) {
-  .header .logo img {
-    max-height: 30px;
+  .header .logo .mobile-logo {
+    display: none;
+  }
+  .header .logoLink .balloonImg{
+    position: unset;
   }
 }
 
@@ -491,8 +494,8 @@ h6 {
 }
 
 .footer .footer-about .logo img {
-  max-height: 40px;
-  margin-right: 6px;
+  /* max-height: 40px;
+  margin-right: 6px; */
 }
 
 .footer .footer-about .logo span {
