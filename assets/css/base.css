@@ -1,5 +1,6 @@
 .header {
   padding: 36px 0 20px;
+  /* Keyframe for floating animation */
 }
 @media screen and (max-width: 992px) {
   .header {
@@ -16,6 +17,29 @@
 @media screen and (max-width: 992px) {
   .header .header-container {
     padding: 12px 8px;
+  }
+}
+.header .logoLink {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 205px;
+  margin-top: 50px;
+}
+.header .logoLink .balloonImg {
+  position: absolute;
+  top: -85%;
+  right: 32px;
+  width: 36px;
+  animation: floatBalloon 2s ease-in-out infinite;
+}
+@keyframes floatBalloon {
+  0%, 100% {
+    transform: translateY(-4px);
+  }
+  50% {
+    transform: translateY(-10px);
   }
 }
 
@@ -127,8 +151,31 @@
   align-items: center;
   justify-content: center;
 }
-.footer .footer-about .logo img {
-  max-height: none;
+.footer .footer-about .logo .logoImage {
+  /* Keyframe for floating animation */
+}
+.footer .footer-about .logo .logoImage .logoLink {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 330px;
+  margin-top: 50px;
+}
+.footer .footer-about .logo .logoImage .logoLink .balloonImg {
+  position: absolute;
+  top: -72%;
+  right: 55px;
+  width: 50px;
+  animation: footerfloatBalloon 2s ease-in-out infinite;
+}
+@keyframes footerfloatBalloon {
+  0%, 100% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
 .footer .social-links a {
   color: #ffffff;
@@ -139,6 +186,26 @@
   border-color: #EEAC19;
 }
 
+@media screen and (max-width: 992px) {
+  .header .logo .mobile-logo {
+    display: none;
+  }
+  .header .logoLink .balloonImg {
+    position: unset;
+  }
+  .header .logoLink {
+    margin-top: 0;
+    width: auto;
+  }
+  @keyframes floatBalloon {
+    0%, 100% {
+      transform: translateY(5%);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+}
 .brandlift-feature {
   background-color: #001F22;
 }

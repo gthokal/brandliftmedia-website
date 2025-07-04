@@ -13,6 +13,32 @@
             padding: 12px 8px;
         }
     }
+    .logoLink {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 205px;
+        margin-top: 50px;
+    }
+
+    .logoLink .balloonImg {
+        position: absolute;
+        top: -85%;
+        right: 32px;
+        width: 36px;
+        animation: floatBalloon 2s ease-in-out infinite;
+    }
+
+    /* Keyframe for floating animation */
+    @keyframes floatBalloon {
+        0%, 100% {
+            transform: translateY(-4px);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
 }
 
 .navmenu a, .navmenu a:focus{
@@ -119,8 +145,34 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        .logo img{
-            max-height: none;
+        .logo .logoImage{
+            //max-height: none;
+            .logoLink {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 330px;
+                margin-top: 50px;
+            }
+
+            .logoLink .balloonImg {
+                position: absolute;
+                top: -72%;
+                right: 55px;
+                width: 50px;
+                animation: footerfloatBalloon 2s ease-in-out infinite;
+            }
+
+            /* Keyframe for floating animation */
+            @keyframes footerfloatBalloon {
+                0%, 100% {
+                    transform: translateY(0%);
+                }
+                50% {
+                    transform: translateY(-10px);
+                }
+            }
         }
     }
     .social-links a{
@@ -132,3 +184,24 @@
         }
     }
 } 
+
+@media screen and (max-width: 992px) {
+  .header .logo .mobile-logo {
+    display: none;
+  }
+  .header .logoLink .balloonImg{
+    position: unset;
+  }
+  .header .logoLink{
+    margin-top: 0;
+    width: auto;
+  }
+  @keyframes floatBalloon {
+        0%, 100% {
+            transform: translateY(5%);
+        }
+        50% {
+            transform: translateY(-8px);
+        }
+    }
+}
